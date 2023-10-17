@@ -22,5 +22,6 @@
   "peerDependencies": {
     "react": "*",
     "react-dom": "*"
-  }
+  },
+  "files": ["dist"]
 }
