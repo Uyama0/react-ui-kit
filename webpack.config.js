@@ -4,18 +4,22 @@ module.exports = {
   mode: "production",
   entry: "./src/index.ts",
   output: {
-    filename: "index.ts",
+    filename: "index.js",
     path: path.resolve(__dirname, "dist"),
-    libaryTarget: "umd",
+    libraryTarget: "umd",
     clean: true,
   },
-  resolve: { extesions: ["ts", "tsx"] },
+  resolve: { extensions: [".ts", ".tsx"] },
   externals: {
     react: "react",
   },
   module: {
-    test: /\.(ts|tsx)?$/,
-    use: ["ts-loader"],
-    exclude: /node_modules/,
+    rules: [
+      {
+        test: /\.(ts|tsx)?$/,
+        use: ["ts-loader"],
+        exclude: /node_modules/,
+      },
+    ],
   },
 };
