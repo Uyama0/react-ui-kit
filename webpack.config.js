@@ -9,7 +9,9 @@ module.exports = {
     libraryTarget: "umd",
     clean: true,
   },
-  resolve: { extensions: [".ts", ".tsx"] },
+  resolve: {
+    extensions: [".ts", ".tsx"],
+  },
   externals: {
     react: "react",
   },
