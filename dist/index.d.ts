@@ -1,2 +1,2 @@
-import InfoCard from "./infoCard/InfoCard";
-export { InfoCard };
+import MyButton from "./MyButton/MyButton";
+export { MyButton };
